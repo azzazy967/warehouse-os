@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.pgdata/
+*.sqlite
+*.sqlite-journal
+*.sqlite.bak
+*.tsbuildinfo
+.env
+backend/.env
+frontend/dist
+.DS_Store
+*.log
+coverage/
+backend/uploads/

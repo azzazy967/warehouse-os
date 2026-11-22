@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1020" />
+    <script>
+      /* Apply the saved theme before first paint to avoid a flash of the wrong theme. */
+      (function () {
+        try {
+          if (localStorage.getItem('wms_theme') === 'light') {
+            document.documentElement.dataset.theme = 'light';
+            var meta = document.querySelector('meta[name="theme-color"]');
+            if (meta) meta.setAttribute('content', '#f6f8fc');
+          }
+        } catch (error) {
+          /* Storage may be unavailable; the default dark theme remains active. */
+        }
+      })();
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Warehouse OS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
