@@ -1,6 +1,25 @@
 # Warehouse OS
 
-A full core Warehouse Management System (WMS): a NestJS REST API with role-based auth and a React admin UI. It covers inventory, products, locations, receiving, picking, shipping, stock movements, and a dashboard.
+[![Landing page](https://img.shields.io/badge/Live%20site-GitHub%20Pages-22d3ee?style=flat-square)](https://azzazy967.github.io/warehouse-os/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-047857?style=flat-square)](LICENSE)
+
+A full core Warehouse Management System (WMS): a NestJS REST API with role-based auth and a React admin UI. It covers inventory, products, locations, receiving, picking, shipping, stock movements, and a dashboard. Free, open source and self-hosted.
+
+**Project site:** https://azzazy967.github.io/warehouse-os/
+
+## Screenshots
+
+Dashboard (dark) | Dashboard (light)
+--- | ---
+![Warehouse OS dashboard in dark theme](site/screenshots/dashboard-dark.webp) | ![Warehouse OS dashboard in light theme](site/screenshots/dashboard-light.webp)
+
+Products | Product detail
+--- | ---
+![Products catalogue](site/screenshots/products.webp) | ![Product detail with barcode and images](site/screenshots/product-detail.webp)
+
+Inventory | Picking
+--- | ---
+![Inventory stock overview](site/screenshots/inventory.webp) | ![Picking orders](site/screenshots/picking.webp)
 
 - **Backend:** NestJS 10 + TypeORM 0.3, JWT/Passport auth, bcrypt, class-validator.
 - **Frontend:** React 18 + Vite 6 + TypeScript (strict), Recharts, Lucide icons.

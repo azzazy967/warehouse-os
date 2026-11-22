@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Warehouse OS - Open-Source Warehouse Management System (WMS)</title>
+    <meta
+      name="description"
+      content="Warehouse OS is a free, open-source warehouse management system with role-based access, inventory tracking, Code 128 barcodes, receiving, picking, shipping and a live operations dashboard."
+    />
+    <meta name="keywords" content="warehouse management system, WMS, inventory management software, open source WMS, barcode inventory tracking, stock management, pick pack ship, logistics software" />
+    <meta name="author" content="Mohamed Mahmoud Abdallah Yousef" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://azzazy967.github.io/warehouse-os/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Warehouse OS" />
+    <meta property="og:title" content="Warehouse OS - Open-Source Warehouse Management System" />
+    <meta
+      property="og:description"
+      content="Run your warehouse operations from one place: inventory, products, locations, receiving, picking, shipping and a live dashboard, with three built-in roles."
+    />
+    <meta property="og:url" content="https://azzazy967.github.io/warehouse-os/" />
+    <meta property="og:image" content="https://azzazy967.github.io/warehouse-os/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Warehouse OS - Open-Source WMS" />
+    <meta name="twitter:description" content="A self-hostable warehouse management system built with NestJS and React." />
+    <meta name="twitter:image" content="https://azzazy967.github.io/warehouse-os/og-image.svg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Warehouse OS",
+        "description": "An open-source warehouse management system covering inventory, products, locations, receiving, picking, shipping, stock movements and an operational dashboard.",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Any",
+        "softwareRequirements": "Node.js 20 or newer",
+        "url": "https://azzazy967.github.io/warehouse-os/",
+        "codeRepository": "https://github.com/azzazy967/warehouse-os",
+        "inLanguage": "en",
+        "isAccessibleForFree": true,
+        "author": {
+          "@type": "Person",
+          "name": "Mohamed Mahmoud Abdallah Yousef"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "screenshot": [
+          "https://azzazy967.github.io/warehouse-os/screenshots/dashboard-dark.webp",
+          "https://azzazy967.github.io/warehouse-os/screenshots/products.webp",
+          "https://azzazy967.github.io/warehouse-os/screenshots/product-detail.webp"
+        ],
+        "featureList": [
+          "Role-based access control (ADMIN, MANAGER, PICKER)",
+          "Real-time inventory and stock movements",
+          "Product detail pages with images and Code 128 barcodes",
+          "Receiving, picking and shipping workflows",
+          "Dashboard with KPI drill-downs and charts",
+          "Dark and light themes"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="./" aria-label="Warehouse OS home">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5v-9Z" />
+            <path d="m3 7.5 9 4.5 9-4.5M12 12v9" />
+          </svg>
+          <span>Warehouse OS</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#modules">Modules</a>
+          <a href="#quickstart">Quick start</a>
+          <a class="nav-cta" href="https://github.com/azzazy967/warehouse-os">GitHub</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap">
+        <p class="eyebrow">Open source. Self-hosted. Built for real warehouses.</p>
+        <h1>Warehouse management without the complexity</h1>
+        <p class="lede">
+          Warehouse OS gives your team one place to manage inventory, products, locations and the
+          full receive-pick-ship workflow. Three roles, a live dashboard, and barcodes on every
+          product, all running on your own infrastructure.
+        </p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://github.com/azzazy967/warehouse-os">View on GitHub</a>
+          <a class="btn btn-secondary" href="#screenshots">See screenshots</a>
+        </div>
+        <ul class="stack" aria-label="Technology stack">
+          <li>NestJS</li>
+          <li>React</li>
+          <li>TypeScript</li>
+          <li>PostgreSQL / SQLite</li>
+          <li>JWT roles</li>
+        </ul>
+      </section>
+
+      <section class="wrap section" id="features">
+        <h2>Everything a warehouse team needs</h2>
+        <p class="section-lede">
+          Purpose-built modules replace spreadsheets and scattered tools with a single, auditable
+          system of record.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Role-based access</h3>
+            <p>ADMIN, MANAGER and PICKER permissions are enforced on both the API and the interface. Pickers only complete orders assigned to them.</p>
+          </article>
+          <article class="card">
+            <h3>Inventory you can trust</h3>
+            <p>Live stock per product and bin, reserved units kept separate, guarded adjustments and an immutable movement history for every change.</p>
+          </article>
+          <article class="card">
+            <h3>Products with barcodes</h3>
+            <p>Every product gets a unique Code 128 barcode automatically. Upload product images, download barcode SVGs and print labels.</p>
+          </article>
+          <article class="card">
+            <h3>Receive, pick, ship</h3>
+            <p>Create inbound orders, receive partial quantities, assign picks and ship with over-receive and double-ship protection built in.</p>
+          </article>
+          <article class="card">
+            <h3>Operations dashboard</h3>
+            <p>Clickable KPIs with drill-downs, stock-value and units-by-location charts, an operational flow diagram and an activity timeline.</p>
+          </article>
+          <article class="card">
+            <h3>Light and dark themes</h3>
+            <p>A complete dark interface with a full light theme. The preference persists, and charts adapt their text colors automatically.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section showcase" id="screenshots">
+        <div class="wrap">
+          <h2>See the system in action</h2>
+          <p class="section-lede">
+            Real screens from the running application. Select any image to open a full-size view.
+          </p>
+
+          <div class="theme-pair">
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-full="screenshots/dashboard-dark.webp" aria-label="Enlarge dashboard in dark theme">
+                <picture>
+                  <source srcset="screenshots/dashboard-dark.webp" type="image/webp" />
+                  <img src="screenshots/dashboard-dark.png" alt="Warehouse OS operations dashboard in dark theme showing KPIs, operational flow, charts and recent activity" width="1600" height="1791" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+              <figcaption>
+                <strong>Operations dashboard - dark</strong>
+                <span>KPI drill-downs, flow diagram, charts and activity timeline</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-full="screenshots/dashboard-light.webp" aria-label="Enlarge dashboard in light theme">
+                <picture>
+                  <source srcset="screenshots/dashboard-light.webp" type="image/webp" />
+                  <img src="screenshots/dashboard-light.png" alt="Warehouse OS operations dashboard in light theme with the same KPIs and charts" width="1600" height="1791" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+              <figcaption>
+                <strong>Operations dashboard - light</strong>
+                <span>The full interface adapts to a high-contrast light theme</span>
+              </figcaption>
+            </figure>
+          </div>
+
+          <p class="light-note">The same data, two complete themes - switch instantly in the header or on the login screen.</p>
+
+          <div class="shot-grid" style="margin-top: 34px">
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-full="screenshots/products.webp" aria-label="Enlarge products list">
+                <picture>
+                  <source srcset="screenshots/products.webp" type="image/webp" />
+                  <img src="screenshots/products.png" alt="Products list with search, filters, stock levels and management actions" width="1600" height="1821" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+              <figcaption>
+                <strong>Products</strong>
+                <span>Searchable catalogue with stock status and inline management</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-full="screenshots/product-detail.webp" aria-label="Enlarge product detail page">
+                <picture>
+                  <source srcset="screenshots/product-detail.webp" type="image/webp" />
+                  <img src="screenshots/product-detail.png" alt="Product detail page with uploaded image, auto-generated Code 128 barcode, stock by location and movement history" width="1600" height="1547" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+              <figcaption>
+                <strong>Product detail</strong>
+                <span>Images, Code 128 barcode, stock by location and movement history</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-full="screenshots/inventory.webp" aria-label="Enlarge inventory screen">
+                <picture>
+                  <source srcset="screenshots/inventory.webp" type="image/webp" />
+                  <img src="screenshots/inventory.png" alt="Inventory table showing available stock, reserved units, stock value and status per location" width="1600" height="1784" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+              <figcaption>
+                <strong>Inventory</strong>
+                <span>Available and reserved stock, valuation and per-bin status</span>
+              </figcaption>
+            </figure>
+
+            <figure class="shot">
+              <button class="shot-frame" type="button" data-full="screenshots/picking.webp" aria-label="Enlarge picking screen">
+                <picture>
+                  <source srcset="screenshots/picking.webp" type="image/webp" />
+                  <img src="screenshots/picking.png" alt="Picking orders with assignment, statuses and pick actions" width="1600" height="1059" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+              <figcaption>
+                <strong>Picking</strong>
+                <span>Assigned pick lists, partial picks and guarded completion</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap section" id="modules">
+        <h2>One system, eight modules</h2>
+        <div class="module-list">
+          <div><strong>Inventory</strong><span>Stock levels, valuation, status and manual adjustments</span></div>
+          <div><strong>Products</strong><span>CRUD, categories, images, barcodes and movement history</span></div>
+          <div><strong>Locations</strong><span>Warehouses, zones, aisles, racks and bins</span></div>
+          <div><strong>Receiving</strong><span>Inbound orders and partial receipt with over-receive blocking</span></div>
+          <div><strong>Picking</strong><span>Assignment, partial picks and stock deduction across bins</span></div>
+          <div><strong>Shipping</strong><span>Shipment creation, dispatch and delivery transitions</span></div>
+          <div><strong>Movements</strong><span>Filterable, immutable audit trail of stock changes</span></div>
+          <div><strong>Dashboard</strong><span>KPIs, drill-downs, charts and recent activity</span></div>
+        </div>
+      </section>
+
+      <section class="wrap section" id="quickstart">
+        <h2>Run it in minutes</h2>
+        <p class="section-lede">Node.js 20 or newer is all you need for the local SQLite setup.</p>
+        <pre><code>git clone https://github.com/azzazy967/warehouse-os.git
+cd warehouse-os
+npm install
+npm run install:all
+npm run dev:sqlite</code></pre>
+        <p>Open <code>http://localhost:5173</code> and sign in with one of the local demo accounts described in the README. Full setup and production deployment guides are in the repository.</p>
+      </section>
+
+      <section class="wrap section cta">
+        <h2>Ready to take control of your warehouse?</h2>
+        <p>Clone the repository, follow the local setup guide and start managing stock today.</p>
+        <a class="btn btn-primary" href="https://github.com/azzazy967/warehouse-os">Get Warehouse OS on GitHub</a>
+      </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox" aria-label="Screenshot preview">
+      <button class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+      <img id="lightbox-image" src="" alt="Enlarged screenshot" />
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <span>Warehouse OS - free and open source.</span>
+        <nav aria-label="Footer navigation">
+          <a href="https://github.com/azzazy967/warehouse-os">Repository</a>
+          <a href="https://github.com/azzazy967/warehouse-os/issues">Issues</a>
+          <a href="https://github.com/azzazy967/warehouse-os/blob/master/docs/PRODUCTION_DEPLOY.md">Deploy guide</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var lightbox = document.getElementById('lightbox');
+        var image = document.getElementById('lightbox-image');
+        var closeButton = lightbox.querySelector('.lightbox-close');
+
+        document.querySelectorAll('.shot-frame').forEach(function (button) {
+          button.addEventListener('click', function () {
+            var src = button.getAttribute('data-full');
+            image.src = src;
+            image.alt = button.getAttribute('aria-label');
+            lightbox.showModal();
+          });
+        });
+
+        closeButton.addEventListener('click', function () { lightbox.close(); });
+        lightbox.addEventListener('click', function (event) {
+          if (event.target === lightbox) lightbox.close();
+        });
+      })();
+    </script>
+  </body>
+</html>

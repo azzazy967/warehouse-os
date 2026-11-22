@@ -4,6 +4,7 @@ dist/
 *.sqlite
 *.sqlite-journal
 *.sqlite.bak
+*.bak
 *.tsbuildinfo
 .env
 backend/.env

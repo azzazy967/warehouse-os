@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2a44"/>
+      <stop offset="1" stop-color="#0b1524"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(95 240)" fill="none" stroke="#22d3ee" stroke-width="7" stroke-linejoin="round">
+    <path d="M0 40 65 8l65 32v65L65 137 0 105V40Z"/>
+    <path d="m0 40 65 32 65-32M65 72v65"/>
+  </g>
+  <text x="260" y="288" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="82" font-weight="700">Warehouse OS</text>
+  <text x="262" y="350" fill="#22d3ee" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="600">Open-source warehouse management</text>
+  <text x="262" y="398" fill="#a5b4cc" font-family="Arial, Helvetica, sans-serif" font-size="25">Inventory - Barcodes - Receiving - Picking - Shipping</text>
+  <rect x="95" y="520" width="460" height="52" rx="26" fill="#22d3ee"/>
+  <text x="325" y="554" text-anchor="middle" fill="#0b1524" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">github.com/azzazy967/warehouse-os</text>
+</svg>

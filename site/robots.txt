@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://azzazy967.github.io/warehouse-os/sitemap.xml
