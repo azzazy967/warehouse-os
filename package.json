@@ -4,7 +4,7 @@
   "private": true,
   "description": "Full core Warehouse Management System - NestJS API + React admin UI",
   "scripts": {
-    "setup": "npm --prefix backend install && npm --prefix frontend install",
+    "setup": "npm install --no-audit --no-fund && npm --prefix backend install && npm --prefix frontend install",
     "seed": "npm --prefix backend run seed",
     "dev": "concurrently -n api,web -c cyan,magenta \"npm --prefix backend run start:dev\" \"npm --prefix frontend run dev\"",
     "dev:sqlite": "concurrently -n api,web -c cyan,magenta \"npm --prefix backend run start:sqlite\" \"npm --prefix frontend run dev\"",

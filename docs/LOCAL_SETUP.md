@@ -4,7 +4,7 @@ This is the zero-dependency path: SQLite for the database, Vite dev server for t
 
 ## Prerequisites
 
-- Node.js 18+ and npm
+- Node.js 20+ and npm (required by the SQLite driver)
 - (Optional) Docker, only if you want to test the PostgreSQL production path locally
 
 ## First run
@@ -12,7 +12,7 @@ This is the zero-dependency path: SQLite for the database, Vite dev server for t
 From the repository root:
 
 ```bash
-npm run setup        # npm install in backend/ and frontend/
+npm run setup        # install root runner + backend/ + frontend/ deps
 npm run seed         # create SQLite schema + demo data (idempotent)
 npm run dev:sqlite   # start API (:3000) and UI (:5173)
 ```

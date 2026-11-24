@@ -79,10 +79,10 @@ UI is English only and uses Lucide icons exclusively (no emojis). A Dark/Light m
 
 ## Quick start (local development, SQLite)
 
-This mode needs **no external database**. Prerequisites: Node.js 18+ and npm.
+This mode needs **no external database**. Prerequisites: Node.js 20+ and npm (the SQLite driver requires Node 20 or newer).
 
 ```bash
-npm run setup          # install backend + frontend deps
+npm run setup          # install root runner + backend + frontend deps
 npm run seed           # create schema and load demo data into SQLite
 npm run dev:sqlite     # start API (:3000) and UI (:5173) together
 ```
