@@ -219,7 +219,7 @@ Run from the repo root unless noted.
 
 | Command | Description |
 | --- | --- |
-| `npm run setup` | Install backend + frontend dependencies |
+| `npm run setup` | Install root runner + backend + frontend dependencies |
 | `npm run seed` | Create schema + demo data (skips if already seeded) |
 | `npm run dev:sqlite` | Run API + UI in SQLite dev mode |
 | `npm run dev` | Run API + UI (uses each package's default env) |
